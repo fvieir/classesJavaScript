@@ -1,0 +1,21 @@
+{
+  "name": "clientbanck",
+  "version": "1.0.0",
+  "description": "Projeto clientbanck",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fvieir/classesJavaScript.git"
+  },
+  "author": "Fabricio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fvieir/classesJavaScript/issues"
+  },
+  "homepage": "https://github.com/fvieir/classesJavaScript#readme",
+  "type":"module"
+}
