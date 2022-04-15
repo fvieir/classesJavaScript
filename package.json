@@ -17,5 +17,12 @@
     "url": "https://github.com/fvieir/classesJavaScript/issues"
   },
   "homepage": "https://github.com/fvieir/classesJavaScript#readme",
-  "type":"module"
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0"
+  }
 }

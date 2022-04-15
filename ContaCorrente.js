@@ -1,7 +1,7 @@
 import { Cliente } from "./Cliente.js"
 
 export class ContaCorrente {
-    static numeroDeContas = 0;
+    static numeroDeContas
     agencia;
     _cliente;
     _saldo = 0;
@@ -16,6 +16,7 @@ export class ContaCorrente {
         if (novoCliente instanceof Cliente)
         this._cliente = novoCliente
     }
+
 
     get cliente () {
         return this._cliente
