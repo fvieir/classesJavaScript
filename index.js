@@ -1,10 +1,12 @@
-import { Cliente } from "./Cliente.js"
-import { ContaCorrente } from "./ContaCorrente.js"
+import { Cliente } from './Cliente.js'
+import { ContaCorrente } from './ContaCorrente.js'
+import { Conta } from './Conta.js'
 
-const cliente_1 = new Cliente('Fabrício','111-111-111-11')
-const cliente_2 = new Cliente('Natalia','111-111-111-11')
+const cliente1 = new Cliente('Fabrício', '111-111-111-11')
+const contaCorrenteFabricio = new Conta(0.00, cliente1, '0137')
 
-const contaCorrenteFabricio = new ContaCorrente('0137', cliente_1)
-const conta_2 = new ContaCorrente('2587',cliente_2)
+const cliente2 = new Cliente('Nath', '111-111-111-11')
+const contaCorrenteNath = new Conta(0.00, cliente2, '0137')
 
-console.log(ContaCorrente.numeroDeContas)
+console.log(Conta.numeroDeContas)
+console.log(contaCorrenteFabricio, contaCorrenteNath)
