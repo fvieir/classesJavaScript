@@ -24,6 +24,10 @@ export class Conta {
     return this._saldo
   }
 
+  sacar () {
+    throw new Error('Metodo Sacar é abstrato, favor implementa-lo na classe que extend de conta')
+  }
+
   _sacar (valor, taxa) {
     const valorSacado = valor * taxa
     if (this._saldo >= valorSacado) {
