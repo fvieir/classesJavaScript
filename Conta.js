@@ -1,9 +1,10 @@
 import { Cliente } from './Cliente.js'
 
 export class Conta {
-  static numeroDeContas = 0
-  
   constructor (saldoInicial, cliente, agencia) {
+    if (this.constructor === Conta) {
+      throw new Error('Não é possível instanciar classes do tipo Abstratas')
+    }
     this._saldo = saldoInicial
     this._cliente = cliente
     this._agencia = agencia
