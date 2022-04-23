@@ -6,5 +6,14 @@ export class Funcionarios {
         this._nome = nome
         this._cpf = cpf
         this._salario = salario
+        this._senha
     } 
+
+    get senha () {
+        return this._senha
+    }
+
+    _cadastrarSenha (senha) {
+        this._senha = senha
+    }
 }

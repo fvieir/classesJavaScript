@@ -5,6 +5,7 @@ import { ContaSalario } from './conta/ContaSalario.js'
 import { Diretor } from './funcionarios/Diretor.js'
 import { Funcionarios } from './funcionarios/Funcionarios.js'
 import { Gerente } from './funcionarios/Gerente.js'
+import { SistemaAutentificacao } from './SistemaAutentificacao.js'
 
 // ----- Contas ----- //
 // const cliente1 = new Cliente('Fabrício', '111-111-111-11')
@@ -21,7 +22,8 @@ import { Gerente } from './funcionarios/Gerente.js'
 // ----- Funcionarios ----- //
 
 const func1 = new Gerente('Fabricio', '123', 12000)
-console.log(func1)
+func1._cadastrarSenha('123')
+console.log(SistemaAutentificacao.login(func1, '123'))
 
 const func2 = new Diretor('Fabricio', '123', 22000)
-console.log(func2)
+// console.log(func2)
