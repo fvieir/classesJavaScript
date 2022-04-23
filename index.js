@@ -27,3 +27,7 @@ console.log(SistemaAutentificacao.login(func1, '123'))
 
 const func2 = new Diretor('Fabricio', '123', 22000)
 // console.log(func2)
+
+
+const cliente3 = new Cliente('Fulano', '111-111-111-11', '456')
+console.log(SistemaAutentificacao.login(cliente3, '456'))
